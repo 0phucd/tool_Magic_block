@@ -3,3 +3,4 @@ Library/ filter=lfs diff=lfs merge=lfs -text
 Library/Artifacts/11/11e57ad9b08d962071f7fcccdc5c346f filter=lfs diff=lfs merge=lfs -text
 Library/Artifacts/31/31352ff433dd057f8a7110772903a9e1 filter=lfs diff=lfs merge=lfs -text
 Library/Artifacts/40/403fdcd1a70650df5b93d75732253b56 filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.toolchain.win-x86_64-linux-x86_64@2.0.6/data~/payload.tar.7z filter=lfs diff=lfs merge=lfs -text
