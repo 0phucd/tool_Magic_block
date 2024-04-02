@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - .collabignore
+    - Assets/ConvertJson.cs
+    - Assets/ConvertJson.cs.meta
+    - Assets/Editor.meta
+    - Assets/Editor/CustomPlayButton.meta
+    - Assets/Editor/CustomPlayButton/BookmarkSetting.asset
+    - Assets/Editor/CustomPlayButton/BookmarkSetting.asset.meta
+    - Assets/Editor/SampleScene.unity
+    - Assets/Editor/SampleScene.unity.meta
+    - Assets/JsonReader.cs
+    - Assets/JsonReader.cs.meta
+    - Assets/ModelLoader.cs
+    - Assets/ModelLoader.cs.meta
+    - Assets/Resources.meta
+    - Assets/Resources/EGG.json
+    - Assets/Resources/EGG.json.meta
+    - Assets/Resources/EGG1.json
+    - Assets/Resources/EGG1.json.meta
+    - Assets/SampleColor.meta
+    - Assets/SampleColor/Cube.prefab
+    - Assets/SampleColor/Cube.prefab.meta
+    - Assets/SampleColor/black.mat
+    - Assets/SampleColor/black.mat.meta
+    - Assets/SampleColor/blue.mat
+    - Assets/SampleColor/blue.mat.meta
+    - Assets/SampleColor/clear.mat
+    - Assets/SampleColor/clear.mat.meta
+    - Assets/SampleColor/cyan.mat
+    - Assets/SampleColor/cyan.mat.meta
+    - Assets/SampleColor/gray.mat
+    - Assets/SampleColor/gray.mat.meta
+    - Assets/SampleColor/green.mat
+    - Assets/SampleColor/green.mat.meta
+    - Assets/SampleColor/magenta.mat
+    - Assets/SampleColor/magenta.mat.meta
+    - Assets/SampleColor/red.mat
+    - Assets/SampleColor/red.mat.meta
+    - Assets/SampleColor/white.mat
+    - Assets/SampleColor/white.mat.meta
+    - Assets/SampleColor/yellow.mat
+    - Assets/SampleColor/yellow.mat.meta
+    - Assets/Scenes.meta
+    - Assets/SpawnCube.cs
+    - Assets/SpawnCube.cs.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/AudioManager.asset
+    - ProjectSettings/ClusterInputManager.asset
+    - ProjectSettings/DynamicsManager.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/EditorSettings.asset
+    - ProjectSettings/GraphicsSettings.asset
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/MemorySettings.asset
+    - ProjectSettings/NavMeshAreas.asset
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/PresetManager.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/QualitySettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/TimeManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - ProjectSettings/VFXManager.asset
+    - ProjectSettings/VersionControlSettings.asset
+    - 
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
