@@ -159,6 +159,9 @@ ScriptsOnlyBuild:
     fullTypeName: SpawnCube
     methodName: LoadAndVoxelizeGLBModel
   - assembly: Assembly-CSharp
+    fullTypeName: SpawnCube
+    methodName: FixBug
+  - assembly: Assembly-CSharp
     fullTypeName: SetVelifed
     methodName: Verifyjson
   - assembly: Assembly-CSharp
@@ -295,65 +298,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 2098}
+      Script: {instanceID: 2100}
     - Class: 114
-      Script: {instanceID: 2374}
+      Script: {instanceID: 2376}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 3170}
+      Script: {instanceID: 3172}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 3420}
+      Script: {instanceID: 3422}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3684}
+      Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 3874}
+      Script: {instanceID: 3876}
     - Class: 114
-      Script: {instanceID: 4414}
+      Script: {instanceID: 4416}
     - Class: 114
-      Script: {instanceID: 4714}
+      Script: {instanceID: 4716}
     - Class: 114
-      Script: {instanceID: 4998}
+      Script: {instanceID: 5000}
     - Class: 114
-      Script: {instanceID: 5024}
+      Script: {instanceID: 5026}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5366}
     - Class: 114
-      Script: {instanceID: 5568}
+      Script: {instanceID: 5570}
     - Class: 114
-      Script: {instanceID: 5834}
+      Script: {instanceID: 5836}
     - Class: 114
-      Script: {instanceID: 5920}
+      Script: {instanceID: 5922}
     - Class: 114
-      Script: {instanceID: 5992}
+      Script: {instanceID: 5994}
     - Class: 114
-      Script: {instanceID: 6628}
+      Script: {instanceID: 6630}
     - Class: 114
-      Script: {instanceID: 6632}
+      Script: {instanceID: 6634}
     - Class: 114
-      Script: {instanceID: 6818}
+      Script: {instanceID: 6820}
     - Class: 114
-      Script: {instanceID: 7070}
+      Script: {instanceID: 7072}
     - Class: 114
-      Script: {instanceID: 7212}
+      Script: {instanceID: 7214}
     - Class: 114
-      Script: {instanceID: 7722}
+      Script: {instanceID: 7724}
     - Class: 114
-      Script: {instanceID: 8102}
+      Script: {instanceID: 8104}
     - Class: 114
-      Script: {instanceID: 8170}
+      Script: {instanceID: 8172}
     - Class: 114
-      Script: {instanceID: 8396}
+      Script: {instanceID: 8398}
     - Class: 114
-      Script: {instanceID: 8514}
+      Script: {instanceID: 8400}
     - Class: 114
-      Script: {instanceID: 70572}
+      Script: {instanceID: 8518}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1655,6 +1658,12 @@ ScriptsOnlyBuild:
     className: GridDrawer
   - hash:
       serializedVersion: 2
+      Hash: 3f1134c99bd8d5a82ab71b0233463f08
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HideUi
+  - hash:
+      serializedVersion: 2
       Hash: f5c30c13f634a614558b7be414009428
     assemblyName: LeanCommon.dll
     namespaceName: Lean.Common
@@ -1815,12 +1824,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 3f1134c99bd8d5a82ab71b0233463f08
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HideUi
   platform: 19
   scenePathNames:
   - Assets/Editor/3dconvert.unity

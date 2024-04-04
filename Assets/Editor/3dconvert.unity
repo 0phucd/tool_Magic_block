@@ -5068,6 +5068,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1374343490}
+        m_TargetAssemblyTypeName: SpawnCube, Assembly-CSharp
+        m_MethodName: FixBug
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1374343491}
         m_TargetAssemblyTypeName: SetVelifed, Assembly-CSharp
         m_MethodName: Verifyjson
@@ -9839,7 +9851,7 @@ MonoBehaviour:
   glbFilePath: 
   cubePrefab: {fileID: 2043350214}
   voxelSize: 1
-  xNumber: 0
+  xNumber: 1
   buttonPrefab: {fileID: 8175151775519881868, guid: 7ce0e19ab7f91524895891d665adf9bc, type: 3}
   buttonParent: {fileID: 961799941}
   GlbInputField: {fileID: 343926506}

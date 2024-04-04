@@ -15,7 +15,7 @@ using Siccity.GLTFUtility;
 public class SpawnCube : MonoBehaviour
 
 {
-   
+
     public Button colorButtonPrefab;
 
 // Reference to the parent transform where buttons will be instantiated
@@ -80,7 +80,7 @@ public class SpawnCube : MonoBehaviour
     private Color lastValidColor = Color.white; 
     public GameObject buttonPrefab; // Prefab của button
     public Transform buttonParent; // Parent để chứa các button được tạo ra
-
+  
     public InputField GlbInputField;
     public List<GameObject> buttonGLB;
     public class Block
@@ -176,7 +176,7 @@ public class SpawnCube : MonoBehaviour
             button.GetComponentInChildren<TMP_Text>().text = fileName; // Đặt tên của button là tên của tệp GLB
             button.GetComponent<Button>().onClick.AddListener(() => OnFileNameButtonClick(fileName));
             button.GetComponent<Button>().onClick.AddListener(() => glbFilePath = filePath);
-         
+            
             buttonGLB.Add(button);
         }
     }
@@ -184,10 +184,10 @@ public class SpawnCube : MonoBehaviour
     public void LoadAndVoxelizeGLBModel()
     {
         ResetScene();
+    
         // Import mô hình từ file GLB
         GameObject model = Importer.LoadFromFile(glbFilePath);
-
-        // Kiểm tra xem mô hình đã được load thành công chưa
+       
         if (model != null)
         {
             model.transform.localScale *= xNumber;
@@ -201,6 +201,7 @@ public class SpawnCube : MonoBehaviour
         }
         else
         {
+            
             Debug.LogError("Failed to load GLB model.");
         }
     }
@@ -384,6 +385,7 @@ Vector3 RoundToVoxel(Vector3 input)
 
     void Update()
     {
+ 
         imageColor.color = imageColor.material.color;
         cusCoLor.color = imageColor.color;
        
