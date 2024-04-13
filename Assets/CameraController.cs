@@ -54,7 +54,7 @@ public class CameraController : MonoBehaviour
 
         if (isScrollingRolateX)
         {
-            if (Input.GetMouseButton(0)) // Kiểm tra nút chuột trái được nhấn
+            if (Input.GetMouseButton(0)||(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)) // Kiểm tra nút chuột trái được nhấn
             {
                 // Di chuyển camera khi giữ nút chuột trái
                 CameraMoveWhileLeftMouseButtonHeld();
@@ -82,7 +82,7 @@ public class CameraController : MonoBehaviour
                 return;
             }
 
-            if (Input.GetMouseButton(0)) // Right mouse button
+            if (Input.GetMouseButton(0)||(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)) // Right mouse button
             {
                 OrbitCamera();
             }
@@ -128,7 +128,15 @@ public class CameraController : MonoBehaviour
     {
         float touchX = Input.GetAxis("Mouse X");
         float touchY = Input.GetAxis("Mouse Y");
+        
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        {
+            touchX = Input.GetTouch(0).deltaPosition.x;
+             touchY = Input.GetTouch(0).deltaPosition.y;
 
+            // Rotate the camera around the target based on touch input
+    
+        }
         // Rotate the camera around the target based on mouse input
         transform.RotateAround(target.position, Vector3.up, touchX * rotationSpeed);
         transform.RotateAround(target.position, transform.right, -touchY * rotationSpeed);
@@ -393,13 +401,21 @@ public class CameraController : MonoBehaviour
     }
     void CameraMoveWhileLeftMouseButtonHeld()
     {
+     
         // Kiểm tra nếu nút chuột trái được giữ và di chuyển camera
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)||(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved))
         {
             // Lấy giá trị di chuyển chuột theo trục X và Y
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+            {
+                mouseX = Input.GetTouch(0).deltaPosition.x;
+                mouseY = Input.GetTouch(0).deltaPosition.y;
 
+                // Rotate the camera around the target based on touch input
+    
+            }
             // Tính toán vị trí mới cho camera
             Vector3 newPosition = transform.position;
             newPosition.x += mouseX * panSpeed * Time.deltaTime;
